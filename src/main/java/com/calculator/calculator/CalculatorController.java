@@ -23,7 +23,7 @@ public class CalculatorController {
     public String plus(@RequestParam(value="num1", required=false) Integer num1,
                        @RequestParam(value="num2", required=false) Integer num2) {
         if (num1 == null || num2 == null)
-            return "Ошибка! Один или два аргумента не указаны!";
+            return " Ошибка! Один или два аргумента не указаны!";
         return calculatorService.plus(num1, num2);
     }
     @GetMapping("minus")
